@@ -1,0 +1,15 @@
+{
+  "templateId": "simple_harmonic_motion",
+  "subject": "物理",
+  "tags": ["振动", "正弦", "周期", "简谐运动"],
+  "title": "简谐振动",
+  "params": [
+    { "key": "A", "label": "振幅 A", "min": 0.1, "max": 5, "default": 2, "unit": "m" },
+    { "key": "omega", "label": "角频率 ω", "min": 0.5, "max": 10, "default": 3, "unit": "rad/s" },
+    { "key": "phi", "label": "初相 φ", "min": 0, "max": 6.28, "default": 0, "unit": "rad" }
+  ],
+  "equation": "x = A * cos(omega * t + phi)",
+  "render": { "type": "wave_2d", "xAxis": "t", "yAxis": "x" },
+  "invariants": ["max(|x|) ≈ A"],
+  "narrative": "拖动滑块改变振幅、角频率与初相，观察位移随时间的正弦曲线如何变化。峰值始终等于振幅 A。"
+}

@@ -1,0 +1,6 @@
+{
+  "_comment": "方程 hash 白名单（信任根基线）。对每个模板 equation 字段的原始字符串做 SHA-256。任何改动（含空格、单位、重排）都会导致 CI 失败。新增/修改模板须由人工校验后重新生成基线，AI 无权修改本文件。",
+  "projectile_motion": "7f196caa7a4cd8e65704732f2b8f9ef42feebb2198c132e7f70f5724fca8c336",
+  "simple_harmonic_motion": "a767a51df7cc9b4984ed416a6a0b8efd66c57ee36313f293fce563b99e950c31",
+  "wave_superposition": "482466e6516a2c4127c66bf1fdca033462cc897fe7260c77242507e646c554b8"
+}

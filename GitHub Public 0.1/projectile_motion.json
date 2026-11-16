@@ -1,0 +1,15 @@
+{
+  "templateId": "projectile_motion",
+  "subject": "物理",
+  "tags": ["抛体", "自由落体", "轨迹", "重力"],
+  "title": "抛体 / 自由落体运动",
+  "params": [
+    { "key": "v0", "label": "初速度 v₀", "min": 1, "max": 30, "default": 15, "unit": "m/s" },
+    { "key": "theta", "label": "抛射角 θ", "min": 0.05, "max": 1.52, "default": 0.785, "unit": "rad" },
+    { "key": "g", "label": "重力加速度 g", "min": 1, "max": 20, "default": 9.8, "unit": "m/s²" }
+  ],
+  "equation": "y = v0 * sin(theta) * t - 0.5 * g * t^2",
+  "render": { "type": "particle", "xAxis": "x", "yAxis": "y" },
+  "invariants": ["y(t_land) ≈ 0", "y_max ≈ (v0*sin(theta))^2/(2*g)"],
+  "narrative": "拖动初速度矢量改变大小与方向，观察抛物线轨迹、最高点与落点。落地时高度回到零，最高点符合解析解。"
+}
